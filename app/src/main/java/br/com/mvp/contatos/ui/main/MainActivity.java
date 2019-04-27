@@ -1,7 +1,9 @@
-package br.com.mvp.contatos;
+package br.com.mvp.contatos.ui.main;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import br.com.mvp.contatos.R;
 
 public class MainActivity extends AppCompatActivity {
 
