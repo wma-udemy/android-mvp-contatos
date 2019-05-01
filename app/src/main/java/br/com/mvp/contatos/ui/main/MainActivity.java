@@ -1,5 +1,6 @@
 package br.com.mvp.contatos.ui.main;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import br.com.mvp.contatos.R;
-import br.com.mvp.contatos.model.room.entity.UserEntity;
+import br.com.mvp.contatos.ui.addUser.AddUserActivity;
 
 public class MainActivity extends AppCompatActivity implements MainContract.View {
 

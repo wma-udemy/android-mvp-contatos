@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">Contatos</string>
     <string name="userHint">User</string>
+    <string name="emailHint">E-mail</string>
     <string name="passwordHint">Password</string>
     <string name="loginText">Login</string>
-    <string name="createAccount">Criar uma conta</string>
+    <string name="signUpText">SignUp</string>
+    <string name="createAccount">Create Account</string>
+    <string name="back">Back</string>
 </resources>
