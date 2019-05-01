@@ -3,9 +3,6 @@ package br.com.mvp.contatos.model.room.repository;
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
-
-import java.util.List;
-
 import br.com.mvp.contatos.model.room.entity.UserEntity;
 
 @Dao

@@ -1,12 +1,9 @@
 package br.com.mvp.contatos.model.room.factory;
 
-import android.arch.persistence.db.SupportSQLiteDatabase;
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
-import android.support.annotation.NonNull;
-
 import br.com.mvp.contatos.model.room.entity.UserEntity;
 import br.com.mvp.contatos.model.room.repository.UserRepository;
 

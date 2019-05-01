@@ -1,9 +1,6 @@
 package br.com.mvp.contatos.model.room.repository.impl;
 
 import android.content.Context;
-
-import java.util.List;
-
 import br.com.mvp.contatos.model.room.entity.UserEntity;
 import br.com.mvp.contatos.model.room.factory.AppDatabase;
 
