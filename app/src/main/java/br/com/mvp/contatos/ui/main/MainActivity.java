@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import br.com.mvp.contatos.R;
 
 public class MainActivity extends AppCompatActivity implements MainContract.View {

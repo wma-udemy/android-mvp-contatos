@@ -3,4 +3,5 @@
     <string name="userHint">User</string>
     <string name="passwordHint">Password</string>
     <string name="loginText">Login</string>
+    <string name="createAccount">Criar uma conta</string>
 </resources>
