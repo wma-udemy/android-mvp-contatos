@@ -1,4 +1,4 @@
-package br.com.mvp.contatos.ui.main;
+package br.com.mvp.contatos.main;
 
 import android.content.Context;
 

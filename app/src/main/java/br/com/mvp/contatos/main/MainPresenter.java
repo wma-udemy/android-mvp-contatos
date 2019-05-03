@@ -1,9 +1,9 @@
-package br.com.mvp.contatos.ui.main;
+package br.com.mvp.contatos.main;
 
 import android.content.Context;
 
-import br.com.mvp.contatos.model.room.entity.UserEntity;
-import br.com.mvp.contatos.model.room.repository.impl.UserImplRepository;
+import br.com.mvp.contatos.main.model.entity.UserEntity;
+import br.com.mvp.contatos.main.model.repository.impl.UserImplRepository;
 
 public class MainPresenter implements MainContract.Presenter{
     private MainContract.View view;

@@ -1,9 +1,9 @@
-package br.com.mvp.contatos.model.room.repository;
+package br.com.mvp.contatos.main.model.repository;
 
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
-import br.com.mvp.contatos.model.room.entity.UserEntity;
+import br.com.mvp.contatos.main.model.entity.UserEntity;
 
 @Dao
 public interface UserRepository {

@@ -1,4 +1,4 @@
-package br.com.mvp.contatos.model.room.entity;
+package br.com.mvp.contatos.main.model.entity;
 
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;

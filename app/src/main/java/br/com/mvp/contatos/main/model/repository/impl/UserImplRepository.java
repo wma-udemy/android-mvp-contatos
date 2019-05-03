@@ -1,8 +1,8 @@
-package br.com.mvp.contatos.model.room.repository.impl;
+package br.com.mvp.contatos.main.model.repository.impl;
 
 import android.content.Context;
-import br.com.mvp.contatos.model.room.entity.UserEntity;
-import br.com.mvp.contatos.model.room.factory.AppDatabase;
+import br.com.mvp.contatos.main.model.entity.UserEntity;
+import br.com.mvp.contatos.config.room.AppDatabase;
 
 public class UserImplRepository {
     private AppDatabase appDatabase;

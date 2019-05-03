@@ -1,4 +1,4 @@
-package br.com.mvp.contatos.ui.addUser;
+package br.com.mvp.contatos.addUser;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,7 +7,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import br.com.mvp.contatos.R;
-import br.com.mvp.contatos.ui.main.MainPresenter;
 
 public class AddUserActivity extends AppCompatActivity {
 
