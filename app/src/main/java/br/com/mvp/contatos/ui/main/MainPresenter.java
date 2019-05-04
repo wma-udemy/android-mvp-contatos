@@ -1,6 +1,7 @@
 package br.com.mvp.contatos.ui.main;
 
 import android.content.Context;
+import android.content.Intent;
 
 import br.com.mvp.contatos.model.room.entity.UserEntity;
 import br.com.mvp.contatos.model.room.repository.impl.UserImplRepository;
@@ -22,5 +23,10 @@ public class MainPresenter implements MainContract.Presenter{
             view.signIn();
         else
             view.showMessage("Usuário ou Senha incorretos.");
+    }
+
+    @Override
+    public void callActivity(Intent intent) {
+        view.callActivity(intent);
     }
 }

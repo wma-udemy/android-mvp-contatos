@@ -6,10 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import br.com.mvp.contatos.R;
-import br.com.mvp.contatos.ui.main.MainPresenter;
+import android.widget.Toast;
 
-public class AddUserActivity extends AppCompatActivity {
+import br.com.mvp.contatos.R;
+
+public class AddUserActivity extends AppCompatActivity implements AddUserContract.View{
+
+    private AddUserPresenter presenter;
 
     private EditText etUser, etEmail, etPassword;
     private TextView tvback;
@@ -29,5 +32,12 @@ public class AddUserActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.etPassword);
         tvback = findViewById(R.id.tvback);
         btSignUp = findViewById(R.id.btSignUp);
+
+        presenter = new AddUserPresenter(this);
+    }
+
+    @Override
+    public void showMessage(String message) {
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
 }

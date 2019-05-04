@@ -34,6 +34,15 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
                 presenter.signIn(getApplicationContext(), user, password);
             }
         });
+
+        tvCreateAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AddUserActivity.class);
+
+                presenter.callActivity(intent);
+            }
+        });
     }
 
     private void initComponents() {
@@ -53,5 +62,10 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
     @Override
     public void signIn() {
         Toast.makeText(getApplicationContext(), "LOGIN EFETUADO", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void callActivity(Intent intent) {
+        startActivity(intent);
     }
 }
