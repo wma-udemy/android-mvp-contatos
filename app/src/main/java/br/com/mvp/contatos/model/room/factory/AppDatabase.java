@@ -11,11 +11,26 @@ import br.com.mvp.contatos.model.room.repository.UserRepository;
 public abstract class AppDatabase extends RoomDatabase {
     public abstract UserRepository userRepository();
 
-    public static AppDatabase getAppDatabase(Context context){
-        return Room.databaseBuilder(context, AppDatabase.class, "contatos")
-        .allowMainThreadQueries()
-        .fallbackToDestructiveMigration()
-        .build();
+    private static AppDatabase INSTANCE;
+
+    public static AppDatabase getAppDatabase(Context context) {
+        if(INSTANCE != null)
+            return INSTANCE;
+        else {
+            return INSTANCE = Room.databaseBuilder(context, AppDatabase.class, "contatos")
+                    .allowMainThreadQueries()
+                    .fallbackToDestructiveMigration()
+                    .build();
+        }
+    }
+
+    public static void detachDataBase() {
+        if(INSTANCE != null) {
+            if(INSTANCE.isOpen())
+                INSTANCE.close();
+
+            INSTANCE = null;
+        }
     }
 
 }
