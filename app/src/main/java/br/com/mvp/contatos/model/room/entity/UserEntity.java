@@ -13,6 +13,12 @@ public class UserEntity {
     private String email;
     private String password;
 
+    public UserEntity(String name, String email, String password) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+    }
+
     @NonNull
     public Long getId() {
         return id;
